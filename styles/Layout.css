@@ -1,0 +1,25 @@
+.header, .nav, .main, .sidebar, .advertise, .footer{
+    background-color: rgb(204, 175, 231);
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 5px;
+}
+.header{
+    grid-area: header;
+} 
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+.advertise{
+    grid-area: advertise;
+}
+.footer{
+    grid-area: footer;
+} 
