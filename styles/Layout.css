@@ -16,6 +16,7 @@
 
 .sidebar{
     grid-area: sidebar;
+    margin-bottom: 25px;
 }
 .advertise{
     grid-area: advertise;
@@ -23,3 +24,38 @@
 .footer{
     grid-area: footer;
 } 
+.container{
+    display: grid;
+    gap:20px ;
+    grid-template-areas: 
+    "header     header  header  header"
+    "nav        main    main    sidebar"
+    "nav        main    main    advertise"
+    "footer     footer  footer  footer"
+    ;
+}
+@media screen and (max-width:576px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "advertise"
+        "footer"
+        ;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "header     header  header"
+        "nav        nav     nav"
+        "sidebar    main    main"
+        "advertise  footer  footer "
+        
+        ;
+    }
+}
